@@ -5,9 +5,11 @@
             $vaca = $_POST['vaca'];
             $porco = $_POST['porco'];
 
-            $soma = ($galinha * 2) + ($vaca * 4) + ($porco * 4);
+            function somaPatas($galinha, $vaca, $porco){
+                return ($galinha * 2) + ($vaca * 4) + ($porco * 4);
+            }
 
-            echo "a soma das patas é igual a: " . $soma;
+            echo "<h2>A soma das patas é igual a: " . somaPatas($galinha, $vaca, $porco) . "</h2>";
     }
 
 ?>
